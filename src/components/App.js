@@ -11,7 +11,13 @@ const App = () => {
   return (
     <div id="main">
       <Navbar />
-      <div className='container'></div>
+      <div className='container'>
+        <Routes>
+          <Route element={<Home/>} path='/'/>
+          <Route element={<Top/>} path='/top-10'/>
+          <Route element={<Contact/>} path='/contact'/>
+        </Routes>
+      </div>
     </div>
   )
 }
